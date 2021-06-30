@@ -7,7 +7,7 @@ class DogInterface(ABC):
         pass
 
     @abstractmethod
-    def play_fetch(self):
+    def play_fetch(self) -> None:
         pass
 
 
@@ -17,6 +17,6 @@ class CatInterface(ABC):
         pass
 
     @abstractmethod
-    def break_things(self):
+    def break_things(self) -> None:
         pass
 

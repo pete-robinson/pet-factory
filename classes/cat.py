@@ -12,6 +12,6 @@ class Cat(Animal, CatInterface):
     def purr(self) -> str:
         return self.make_sound()
 
-    def break_things(self):
+    def break_things(self) -> None:
         self.energy = 0
 

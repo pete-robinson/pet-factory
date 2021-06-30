@@ -15,7 +15,7 @@ class Dog(Animal, DogInterface):
         return self.make_sound()
 
     # this is a stupid method, I wasn't feeling hugely creative
-    def play_fetch(self):
+    def play_fetch(self) -> None:
         print("Throwing {0} bones".format(self.bones))
 
         for i in range(0, self.bones):
