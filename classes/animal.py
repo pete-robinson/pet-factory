@@ -1,6 +1,7 @@
 from abc import (ABC, abstractmethod)
 
-# the methods within this class are common to all implementations of it
+# This class is essentially abstract...
+# The methods within this class are common to all implementations of it
 
 
 class Animal(ABC):
