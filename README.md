@@ -17,8 +17,14 @@ This is your abstract parent. It contains all the functionality that is common t
 The Cat variant of your base class (Animal)
 
 ## classes/dog.py
-The Dat variant of your base class (Animal)
+The Dog variant of your base class (Animal)
 
 ## classes/interfaces.py
 Not necessary for this example but may be as your use-case gets more involved.
-Basically using them as a way of type-checking the result when creating data based on iterating a sequence of data so your code knows which type of implementation you're dealing with. 
+
+There are a couple of different approaces to interfaces in Python but this method is the most simple and takes advantage of the multi-inheritance model.
+Each implementation has an interface and we're defining the methods unique to that interface.
+
+Basically using them as a way of type-checking the result when creating data based on iterating a sequence of data so your code knows which type of implementation you're dealing with.
+
+Not the cleanest use of interfaces and you could just compare in `run.py` on the base `Dog` or `Cat` object if you wanted - but as your project gets more complex, you might want to use interface to define different types of implementation (i.e. whether something is iterable for example) 
